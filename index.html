@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>المهندس | بورتفوليو مطوّر تطبيقات وأنظمة</title>
+    <meta name="description" content="بورتفوليو شخصي لمطوّر برمجيات متخصص في Flutter و Java و PHP و Node.js و قواعد البيانات و REST APIs و Docker." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@400;500;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">
+          <span class="brand-bracket">&lt;</span>
+          المُطوّر
+          <span class="brand-bracket">/&gt;</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="#home">الرئيسية</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">من أنا</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">المهارات</a></li>
+            <li class="nav-item"><a class="nav-link" href="#stack">التقنيات</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">الأعمال</a></li>
+            <li class="nav-item"><a class="nav-link cta-btn" href="#contact">تواصل معي</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero" id="home">
+      <div class="hero-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="grid-overlay"></div>
+      </div>
+
+      <div class="container position-relative">
+        <div class="row align-items-center min-vh-100 py-5">
+          <div class="col-lg-7 hero-text">
+            <span class="hero-badge">
+              <span class="status-dot"></span>
+              متاح لفرص عمل جديدة
+            </span>
+            <h1 class="hero-title">
+              مرحباً، أنا
+              <span class="gradient-text">مهندس برمجيات</span>
+              <br />
+              أبني تطبيقات تلمس
+              <span class="typed-wrapper">
+                <span id="typed"></span><span class="caret">|</span>
+              </span>
+            </h1>
+            <p class="hero-sub">
+              أصمم وأطوّر تطبيقات الموبايل بـ <strong>Flutter</strong> وأنظمة الـ Backend بـ <strong>Java</strong> و <strong>PHP</strong> و <strong>Node.js</strong>،
+              مع تصميم REST APIs نظيفة وقواعد بيانات موثوقة. شغفي هو كتابة كود جميل ومنظّم يصمد مع الزمن.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-glow">
+                <i class="bi bi-rocket-takeoff-fill"></i>
+                شاهد أعمالي
+              </a>
+              <a href="#contact" class="btn btn-outline-glow">
+                <i class="bi bi-envelope-paper"></i>
+                تواصل معي
+              </a>
+            </div>
+
+            <div class="hero-stats">
+              <!-- <div class="stat">
+                <span class="stat-num" data-count="4">0</span><span class="plus">+</span>
+                <small>سنوات خبرة بـ Java</small>
+              </div> -->
+               <div class="stat">
+                <span class="stat-num" data-count="4">0</span><span class="plus">+</span>
+                <small>Flutter</small>
+              </div>
+              <div class="stat">
+                <span class="stat-num" data-count="15">0</span><span class="plus">+</span>
+                <small>تقنية أتقنها</small>
+              </div>
+              <div class="stat">
+                <span class="stat-num" data-count="100">0</span><span class="plus">%</span>
+                <small>التزام بالـ Clean Code</small>
+              </div>
+               <div class="stat">
+                <span class="stat-num" data-count="4">0</span><span class="plus">%</span>
+                <small>React&Next.js</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5 hero-visual">
+            <div class="code-card">
+              <div class="code-card-head">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+                <span class="file-name">developer.dart</span>
+              </div>
+              <pre class="code-body"><code><span class="kw">class</span> <span class="cls">Developer</span> {
+  <span class="kw">final</span> String name;
+  <span class="kw">final</span> List&lt;String&gt; stack;
+  <span class="kw">final</span> int yearsOfJava;
+
+  <span class="cls">Developer</span>()
+      : name = <span class="str">'مهندس برمجيات'</span>,
+        stack = [
+          <span class="str">'Flutter'</span>, <span class="str">'Java'</span>,
+          <span class="str">'PHP'</span>, <span class="str">'Node.js'</span>,
+          <span class="str">'SQL'</span>, <span class="str">'Docker'</span>,
+        ]
+        yearsOfJava = <span class="num">4</span>;
+
+  <span class="cls">String</span> motto() =&gt;
+      <span class="str">'Clean code is a love letter 💌'</span>;
+}</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-cue" aria-label="انتقل للأسفل">
+        <i class="bi bi-chevron-double-down"></i>
+      </a>
+    </header>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5 reveal">
+            <div class="about-photo-wrap">
+              <div class="about-photo">
+                <i class="bi bi-person-workspace"></i>
+              </div>
+              <div class="floating-chip chip-1"><i class="bi bi-code-slash"></i> Clean Code</div>
+              <div class="floating-chip chip-2"><i class="bi bi-git"></i> Git Flow</div>
+              <div class="floating-chip chip-3"><i class="bi bi-stack"></i> Full Stack</div>
+            </div>
+          </div>
+          <div class="col-lg-7 reveal">
+            <span class="section-eyebrow">من أنا</span>
+            <h2 class="section-title">مطوّر يعشق <span class="gradient-text">الكود النظيف</span> والحلول العملية</h2>
+            <p class="section-text">
+              أؤمن أنّ البرمجة فنّ قبل أن تكون مهنة. أعمل على بناء تطبيقات موبايل بـ <strong>Flutter / Dart</strong>،
+              وأبني خدمات Backend متينة بـ <strong>Java</strong> (بخبرة سنتين) و <strong>PHP</strong> و <strong>Node.js</strong>،
+              مع تصميم REST APIs واضحة وقواعد بيانات SQL محسَّنة.
+            </p>
+            <p class="section-text">
+              أتبنّى مبادئ <strong>Clean Code</strong> و <strong>SOLID</strong>، وأستخدم <strong>Git/GitHub</strong> و
+              <strong>Docker</strong> في سير عملي اليومي لضمان مشاريع منظّمة وقابلة للنشر بسهولة.
+            </p>
+
+            <div class="about-grid">
+              <div class="about-item">
+                <i class="bi bi-phone"></i>
+                <div>
+                  <h6>تطبيقات موبايل</h6>
+                  <p>Flutter & Dart بتجربة استخدام سلسة</p>
+                </div>
+              </div>
+              <div class="about-item">
+                <i class="bi bi-server"></i>
+                <div>
+                  <h6>أنظمة Backend</h6>
+                  <p>Java, PHP, Node.js مع REST APIs</p>
+                </div>
+              </div>
+              <div class="about-item">
+                <i class="bi bi-database-check"></i>
+                <div>
+                  <h6>قواعد بيانات</h6>
+                  <p>SQL واستعلامات محسَّنة وآمنة</p>
+                </div>
+              </div>
+              <div class="about-item">
+                <i class="bi bi-box-seam"></i>
+                <div>
+                  <h6>DevOps أساسي</h6>
+                  <p>Docker, Git/GitHub وعمل CI بسيط</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="#contact" class="btn btn-glow mt-3">
+              <i class="bi bi-chat-dots"></i>
+              لنبدأ مشروعاً معاً
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="text-center mb-5 reveal">
+          <span class="section-eyebrow">المهارات</span>
+          <h2 class="section-title">ما أتقنه <span class="gradient-text">حقّاً</span></h2>
+          <p class="section-text mx-auto" style="max-width:680px;">
+            مزيج متوازن من تطوير الموبايل، الـ Backend، وأدوات DevOps — أركّز على الجودة قبل الكمّية.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Skill bars -->
+          <div class="col-md-6 reveal">
+            <div class="skill-card">
+              <div class="skill-head">
+                <div class="skill-name"><i class="bi bi-phone-fill"></i> Flutter & Dart</div>
+                <span class="skill-level">متقدّم</span>
+              </div>
+              <div class="bar"><span class="bar-fill" data-pct="92"></span></div>
+              <p class="skill-desc">تطبيقات موبايل متعددة المنصات بأداء عالٍ وواجهات مخصّصة.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 reveal">
+            <div class="skill-card">
+              <div class="skill-head">
+                <div class="skill-name"><i class="bi bi-cup-hot-fill"></i> Java</div>
+                <span class="skill-level">سنتان خبرة</span>
+              </div>
+              <div class="bar"><span class="bar-fill" data-pct="85"></span></div>
+              <p class="skill-desc">برمجة كائنية، OOP، هياكل البيانات، وبناء أنظمة Backend.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 reveal">
+            <div class="skill-card">
+              <div class="skill-head">
+                <div class="skill-name"><i class="bi bi-filetype-php"></i> PHP</div>
+                <span class="skill-level">جيّد جدّاً</span>
+              </div>
+              <div class="bar"><span class="bar-fill" data-pct="78"></span></div>
+              <p class="skill-desc">تطوير خدمات وتطبيقات ويب ديناميكية مع أفضل الممارسات.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 reveal">
+            <div class="skill-card">
+              <div class="skill-head">
+                <div class="skill-name"><i class="bi bi-hexagon-fill"></i> Node.js</div>
+                <span class="skill-level">جيّد جدّاً</span>
+              </div>
+              <div class="bar"><span class="bar-fill" data-pct="80"></span></div>
+              <p class="skill-desc">بناء REST APIs سريعة ومعمارية حديثة باستخدام Express.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 reveal">
+            <div class="skill-card">
+              <div class="skill-head">
+                <div class="skill-name"><i class="bi bi-database-fill"></i> SQL & Databases</div>
+                <span class="skill-level">متقدّم</span>
+              </div>
+              <div class="bar"><span class="bar-fill" data-pct="88"></span></div>
+              <p class="skill-desc">تصميم Schemas، استعلامات معقّدة، Joins، وفهرسة محسّنة.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 reveal">
+            <div class="skill-card">
+              <div class="skill-head">
+                <div class="skill-name"><i class="bi bi-box-fill"></i> Docker</div>
+                <span class="skill-level">جيّد</span>
+              </div>
+              <div class="bar"><span class="bar-fill" data-pct="72"></span></div>
+              <p class="skill-desc">حاويات للتطبيقات، Docker Compose، وتجهيز بيئات التطوير.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 reveal">
+            <div class="skill-card">
+              <div class="skill-head">
+                <div class="skill-name"><i class="bi bi-git"></i> Git & GitHub</div>
+                <span class="skill-level">يومي</span>
+              </div>
+              <div class="bar"><span class="bar-fill" data-pct="90"></span></div>
+              <p class="skill-desc">إدارة فروع، Pull Requests، Code Reviews وسير عمل احترافي.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 reveal">
+            <div class="skill-card">
+              <div class="skill-head">
+                <div class="skill-name"><i class="bi bi-bezier2"></i> REST APIs & Clean Code</div>
+                <span class="skill-level">شغف</span>
+              </div>
+              <div class="bar"><span class="bar-fill" data-pct="93"></span></div>
+              <p class="skill-desc">تصميم واجهات برمجية واضحة، توثيق جيّد، وكود قابل للصيانة.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH STACK -->
+    <section class="section" id="stack">
+      <div class="container">
+        <div class="text-center mb-5 reveal">
+          <span class="section-eyebrow">صندوق الأدوات</span>
+          <h2 class="section-title">التقنيات التي <span class="gradient-text">أعمل بها</span></h2>
+        </div>
+        <div class="tech-grid reveal">
+          <div class="tech-pill" style="--c:#02569B"><i class="bi bi-phone"></i><span>Flutter</span></div>
+          <div class="tech-pill" style="--c:#0175C2"><i class="bi bi-code-square"></i><span>Dart</span></div>
+          <div class="tech-pill" style="--c:#f89820"><i class="bi bi-cup-hot"></i><span>Java</span></div>
+          <div class="tech-pill" style="--c:#777BB4"><i class="bi bi-filetype-php"></i><span>PHP</span></div>
+          <div class="tech-pill" style="--c:#3C873A"><i class="bi bi-hexagon"></i><span>Node.js</span></div>
+          <div class="tech-pill" style="--c:#00758F"><i class="bi bi-database"></i><span>SQL</span></div>
+          <div class="tech-pill" style="--c:#0db7ed"><i class="bi bi-box"></i><span>Docker</span></div>
+          <div class="tech-pill" style="--c:#F05032"><i class="bi bi-git"></i><span>Git</span></div>
+          <div class="tech-pill" style="--c:#181717"><i class="bi bi-github"></i><span>GitHub</span></div>
+          <div class="tech-pill" style="--c:#7952B3"><i class="bi bi-bootstrap"></i><span>Bootstrap</span></div>
+          <div class="tech-pill" style="--c:#E34F26"><i class="bi bi-filetype-html"></i><span>HTML5</span></div>
+          <div class="tech-pill" style="--c:#1572B6"><i class="bi bi-filetype-css"></i><span>CSS3</span></div>
+          <div class="tech-pill" style="--c:#F7DF1E"><i class="bi bi-filetype-js"></i><span>JavaScript</span></div>
+          <div class="tech-pill" style="--c:#10b981"><i class="bi bi-bezier2"></i><span>REST API</span></div>
+          <div class="tech-pill" style="--c:#a78bfa"><i class="bi bi-shield-check"></i><span>Clean Code</span></div>
+          <div class="tech-pill" style="--c:#a78bfa"><i class="bi bi-shield-check"></i><span>Microservices</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="text-center mb-5 reveal">
+          <span class="section-eyebrow">أعمال مختارة</span>
+          <h2 class="section-title">مشاريع <span class="gradient-text">تروي قصة</span></h2>
+          <p class="section-text mx-auto" style="max-width:680px;">
+            مجموعة من المشاريع التي تعكس تنوّع خبرتي بين تطبيقات الموبايل وأنظمة الـ Backend.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 reveal">
+            <article class="project-card">
+              <div class="project-cover" style="--g1:#02569B;--g2:#0175C2;">
+                <i class="bi bi-phone-flip"></i>
+              </div>
+              <div class="project-body">
+                <div class="tags">
+                  <span>Flutter</span><span>Dart</span><span>REST API</span>
+                </div>
+                <h5>تطبيق متجر إلكتروني</h5>
+                <p>تطبيق موبايل متكامل لمتجر إلكتروني، يدعم سلة الشراء والدفع والإشعارات الفورية.</p>
+                <div class="project-actions">
+                  <a href="#" class="link-btn"><i class="bi bi-box-arrow-up-right"></i> معاينة</a>
+                  <a href="#" class="link-btn"><i class="bi bi-github"></i> الكود</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6 reveal">
+            <article class="project-card">
+              <div class="project-cover" style="--g1:#f89820;--g2:#ef4444;">
+                <i class="bi bi-cup-hot-fill"></i>
+              </div>
+              <div class="project-body">
+                <div class="tags">
+                  <span>Java</span><span>SQL</span><span>OOP</span>
+                </div>
+                <h5>نظام إدارة مكتبة</h5>
+                <p>نظام مكتب بـ Java مع قاعدة بيانات SQL لإدارة الكتب والمستعيرين بطريقة منظّمة.</p>
+                <div class="project-actions">
+                  <a href="#" class="link-btn"><i class="bi bi-box-arrow-up-right"></i> معاينة</a>
+                  <a href="#" class="link-btn"><i class="bi bi-github"></i> الكود</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6 reveal">
+            <article class="project-card">
+              <div class="project-cover" style="--g1:#3C873A;--g2:#10b981;">
+                <i class="bi bi-bezier2"></i>
+              </div>
+              <div class="project-body">
+                <div class="tags">
+                  <span>Node.js</span><span>Express</span><span>REST</span>
+                </div>
+                <h5>REST API لتطبيق مهام</h5>
+                <p>واجهة برمجية كاملة بـ Node.js و Express مع توثيق واضح ومصادقة JWT.</p>
+                <div class="project-actions">
+                  <a href="#" class="link-btn"><i class="bi bi-box-arrow-up-right"></i> معاينة</a>
+                  <a href="#" class="link-btn"><i class="bi bi-github"></i> الكود</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6 reveal">
+            <article class="project-card">
+              <div class="project-cover" style="--g1:#777BB4;--g2:#a78bfa;">
+                <i class="bi bi-filetype-php"></i>
+              </div>
+              <div class="project-body">
+                <div class="tags">
+                  <span>PHP</span><span>MySQL</span><span>Bootstrap</span>
+                </div>
+                <h5>لوحة تحكّم إدارية</h5>
+                <p>لوحة إدارية متكاملة بـ PHP و Bootstrap لإدارة المستخدمين والصلاحيات.</p>
+                <div class="project-actions">
+                  <a href="#" class="link-btn"><i class="bi bi-box-arrow-up-right"></i> معاينة</a>
+                  <a href="#" class="link-btn"><i class="bi bi-github"></i> الكود</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6 reveal">
+            <article class="project-card">
+              <div class="project-cover" style="--g1:#0db7ed;--g2:#06b6d4;">
+                <i class="bi bi-box-fill"></i>
+              </div>
+              <div class="project-body">
+                <div class="tags">
+                  <span>Docker</span><span>DevOps</span><span>CI</span>
+                </div>
+                <h5>بيئة تطوير بـ Docker</h5>
+                <p>إعداد بيئة تطوير متكاملة بـ Docker Compose تجمع PHP و MySQL و Nginx بضغطة واحدة.</p>
+                <div class="project-actions">
+                  <a href="#" class="link-btn"><i class="bi bi-box-arrow-up-right"></i> معاينة</a>
+                  <a href="#" class="link-btn"><i class="bi bi-github"></i> الكود</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="col-lg-4 col-md-6 reveal">
+            <article class="project-card">
+              <div class="project-cover" style="--g1:#7952B3;--g2:#ec4899;">
+                <i class="bi bi-bootstrap-fill"></i>
+              </div>
+              <div class="project-body">
+                <div class="tags">
+                  <span>HTML</span><span>CSS</span><span>JS</span><span>Bootstrap</span>
+                </div>
+                <h5>هذا البورتفوليو</h5>
+                <p>الموقع الذي تتصفحه الآن — مبني بـ HTML/CSS/JS/Bootstrap بتصميم RTL عصري.</p>
+                <div class="project-actions">
+                  <a href="#home" class="link-btn"><i class="bi bi-arrow-up-right-circle"></i> أنت هنا</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-7">
+              <span class="section-eyebrow light">تواصل معي</span>
+              <h2 class="section-title text-white">هل لديك <span class="gradient-text">فكرة مشروع؟</span></h2>
+              <p class="section-text text-white-50 mb-4">
+                أنا متاح لفرص العمل والمشاريع المستقلّة. تواصل معي عبر إحدى القنوات التالية، وسأرد عليك في أقرب وقت ممكن.
+              </p>
+              <div class="contact-grid">
+                <a href="mailto:hello@example.com" class="contact-item">
+                  <i class="bi bi-envelope-fill"></i>
+                  <div>
+                    <small>البريد الإلكتروني</small>
+                    <strong>hello@example.com</strong>
+                  </div>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener" class="contact-item">
+                  <i class="bi bi-github"></i>
+                  <div>
+                    <small>GitHub</small>
+                    <strong>github.com/username</strong>
+                  </div>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-item">
+                  <i class="bi bi-linkedin"></i>
+                  <div>
+                    <small>LinkedIn</small>
+                    <strong>in/username</strong>
+                  </div>
+                </a>
+                <a href="https://wa.me/000000000" target="_blank" rel="noopener" class="contact-item">
+                  <i class="bi bi-whatsapp"></i>
+                  <div>
+                    <small>واتساب</small>
+                    <strong>+970 000 000 000</strong>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <form class="contact-form" id="contactForm" novalidate>
+                <h5 class="text-white mb-3">أرسل لي رسالة</h5>
+                <div class="mb-3">
+                  <label for="name" class="form-label">الاسم</label>
+                  <input type="text" class="form-control" id="name" required placeholder="اسمك الكريم" />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">البريد الإلكتروني</label>
+                  <input type="email" class="form-control" id="email" required placeholder="you@example.com" />
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">الرسالة</label>
+                  <textarea class="form-control" id="message" rows="4" required placeholder="اكتب رسالتك هنا..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-glow w-100">
+                  <i class="bi bi-send-fill"></i>
+                  إرسال الرسالة
+                </button>
+                <div id="formStatus" class="form-status"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-center gap-3">
+          <div>
+            <strong class="d-block">صنع بـ <i class="bi bi-heart-fill text-danger"></i> وكثير من الـ Clean Code</strong>
+            <small class="text-white-50">© <span id="year"></span> جميع الحقوق محفوظة</small>
+          </div>
+          <div class="d-flex gap-3 footer-icons">
+            <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="mailto:hello@example.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+            <a href="#home" aria-label="للأعلى"><i class="bi bi-arrow-up-circle-fill"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery-3.7.1.slim.js"></script>
+    <script src="js/popper.min.js"></script>
+    
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
